@@ -15,7 +15,7 @@ app.use(router)
 watch(
   pinia.state,
   (state) => {
-    localStorage.setItem("recipes", JSON.stringify(state.recipes.recipes));
+    localStorage.setItem("recipes", JSON.stringify(state.recipes));
   },
   { deep: true }
 );
